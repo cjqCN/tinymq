@@ -39,7 +39,7 @@ public class NettyServer {
             LOG.info("Starting NettyServer at port: {}", DEFAULT_PORT);
             bootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
-                    .option(ChannelOption.SO_BACKLOG, 100)
+                    .option(ChannelOption.SO_BACKLOG, 1024)
                     .handler(new LoggingHandler(LogLevel.DEBUG))
                     .childHandler(new NettyChannelInitializer());
             // Start the server.
