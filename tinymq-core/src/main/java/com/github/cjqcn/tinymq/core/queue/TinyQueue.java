@@ -6,10 +6,10 @@ import java.util.Queue;
 
 public interface TinyQueue<T> extends Queue<T> {
 
-	String topic();
+    String topic();
 
-	void addConsume(long openId, ConsumeChannel consumeChannel);
+    void addConsume(long openId, ConsumeChannel consumeChannel);
 
-	void removeConsume(long openId);
+    void removeConsume(long openId);
 
 }

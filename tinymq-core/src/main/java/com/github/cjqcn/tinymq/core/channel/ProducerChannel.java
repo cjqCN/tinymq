@@ -4,5 +4,5 @@ import com.github.cjqcn.tinymq.core.router.RouteKey;
 
 public interface ProducerChannel extends TinyChannel {
 
-	RouteKey routeKey();
+    RouteKey routeKey();
 }

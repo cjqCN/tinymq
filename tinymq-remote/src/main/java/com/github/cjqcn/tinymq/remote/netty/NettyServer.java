@@ -1,6 +1,5 @@
-package com.github.cjqcn.tinymq.core.network.netty;
+package com.github.cjqcn.tinymq.remote.netty;
 
-import com.github.cjqcn.tinymq.core.network.netty.internal.NettyChannelInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
@@ -31,16 +30,13 @@ public class NettyServer {
         server.start();
     }
 
-
     public synchronized void start() throws Exception {
         // Configure the server.
         try {
             long start = System.currentTimeMillis();
             LOG.info("Starting NettyServer at port: {}", DEFAULT_PORT);
-            bootstrap.group(bossGroup, workerGroup)
-                    .channel(NioServerSocketChannel.class)
-                    .option(ChannelOption.SO_BACKLOG, 1024)
-                    .handler(new LoggingHandler(LogLevel.DEBUG))
+            bootstrap.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class)
+                    .option(ChannelOption.SO_BACKLOG, 1024).handler(new LoggingHandler(LogLevel.DEBUG))
                     .childHandler(new NettyChannelInitializer());
             // Start the server.
             ChannelFuture f = bootstrap.bind(port).sync();

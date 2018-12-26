@@ -1,4 +1,4 @@
-package com.github.cjqcn.tinymq.common;
+package com.github.cjqcn.tinymq.common.msg;
 
 /**
  * @author: chenjinquan

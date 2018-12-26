@@ -1,5 +1,6 @@
-package com.github.cjqcn.tinymq.common.codec;
+package com.github.cjqcn.tinymq.remote.netty.handler;
 
+import com.github.cjqcn.tinymq.common.codec.kryo.KryoSerializer;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;

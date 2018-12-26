@@ -6,6 +6,6 @@ package com.github.cjqcn.tinymq.core.router;
  **/
 public class RouteKey {
 
-	public int type;
-	public String routeValue;
+    public int type;
+    public String routeValue;
 }

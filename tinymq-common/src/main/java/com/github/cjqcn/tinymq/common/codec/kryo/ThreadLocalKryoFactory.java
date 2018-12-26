@@ -1,4 +1,4 @@
-package com.github.cjqcn.tinymq.common.codec;
+package com.github.cjqcn.tinymq.common.codec.kryo;
 
 import com.esotericsoftware.kryo.Kryo;
 

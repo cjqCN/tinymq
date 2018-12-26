@@ -5,10 +5,10 @@ import java.util.Queue;
 
 public interface TinyQueueHolder {
 
-	Map<String, Queue> queues();
+    Map<String, Queue> queues();
 
-	void add(String topic, Queue queue);
+    void add(String topic, Queue queue);
 
-	void delete(String topic);
+    void delete(String topic);
 
 }

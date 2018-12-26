@@ -1,6 +1,6 @@
-package com.github.cjqcn.tinymq.core.network.netty.internal;
+package com.github.cjqcn.tinymq.remote.netty.handler;
 
-import com.github.cjqcn.tinymq.common.Heartbeat;
+import com.github.cjqcn.tinymq.common.msg.Heartbeat;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleStateEvent;

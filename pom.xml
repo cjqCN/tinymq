@@ -10,6 +10,7 @@
         <module>tinymq-core</module>
         <module>tinymq-starter</module>
         <module>tinymq-common</module>
+        <module>tinymq-remote</module>
     </modules>
 
     <packaging>pom</packaging>
